@@ -38,11 +38,11 @@ h1{
 }
 
 .heart:nth-child(even) {
-    animation-duration:30s;
+    animation-duration:40s;
 }
 
 .heart:nth-child(odd) {
-    animation-duration: 32s;
+    animation-duration: 40s;
 }
 h2 {
     font-size: 2em;
