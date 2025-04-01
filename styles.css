@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffeff0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    color: #d90076;
+    margin-top: 50px;
+    font-size: 2.5em;
+    font-family: 'Carattere Regular', sans-serif;
+}
+
+#timer, #timer2 {
+    color: #d90076;
+    margin-top: 50px;
+    font-size: 2.5em;
+    font-family: 'Carattere Regular', sans-serif;
+}
+
+.heart {
+    position: absolute;
+    top: -50px;
+    font-size: 2em;
+    color: #ff496c;
+    animation: fall 10s infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(800vh);
+    }
+}
+
+.heart:nth-child(even) {
+    animation-duration:30s;
+}
+
+.heart:nth-child(odd) {
+    animation-duration: 32s;
+}
+h2 {
+    font-size: 2em;
+    color: #ff496c;
+    margin-top: 20px;
+    font-family: 'Carattere Regular', sans-serif;
+}
+.polaroid {
+    width: 250px; 
+    margin: 20px auto; 
+    border: 10px solid #fff; 
+    padding: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transform: rotate(-5deg); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+.polaroid:hover {
+    transform: rotate(0deg); 
+}
+
+@font-face {
+    font-family: 'Carattere Regular';
+    src: url('Carattere-Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-family: 'Carattere Regular', sans-serif; 
+    font-size: 2em;
+    color: #ff496c;
+    margin-top: 20px;
+}

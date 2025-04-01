@@ -1,0 +1,135 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Ano de Amor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <strong>
+        <div id="timer"></div>
+    </strong>
+    <audio controls>
+        <source src="JVKE - her (official lyric video).mp3" type="audio/mpeg">
+      </audio>
+        <h1>
+            Lugar em que nos conhecemos:
+        </h1>
+   <center><iframe src="https://www.google.com/maps/embed?pb=!4v1743526266746!6m8!1m7!1sXX-IsROD0Q5QpnvBLOXPLw!2m2!1d-30.03392694064164!2d-51.21474870209725!3f205.71004326539446!4f-13.586924687235978!5f0.6280446863095266" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+
+
+   <strong>
+    <div id="timer2"></div>
+</strong>
+<h2>
+    Abril de 2024
+</h2>
+   <img src="teste4.jpg" alt="Imagem Polaroid" class="polaroid">
+   <img src="teste5.jpg" alt="Imagem Polaroid" class="polaroid">
+   
+<h2>
+    Maio de 2024
+</h2>
+   <img src="teste12.jpg" alt="Imagem Polaroid" class="polaroid">
+
+<h2>
+    Junho de 2024
+</h2>  
+   <img src="teste11.jpg" alt="Imagem Polaroid" class="polaroid">   
+   <img src="teste10.jpg" alt="Imagem Polaroid" class="polaroid">
+   <img src="teste3.jpg" alt="Imagem Polaroid" class="polaroid">
+   <img src="teste2.jpg" alt="Imagem Polaroid" class="polaroid">
+   <img src="teste9.jpg" alt="Imagem Polaroid" class="polaroid">
+
+<h2>
+    Julho de 2024
+</h2>
+   <img src="teste.jpg" alt="Imagem Polaroid" class="polaroid">
+
+<h2>
+    Agosto de 2024
+</h2>
+   <img src="julho.jpg" alt="Imagem Polaroid" class="polaroid">
+
+<h2>
+    Setembro de 2024
+</h2>
+    <img src="teste7.jpg" alt="Imagem Polaroid" class="polaroid">
+
+<h2>
+    Outubro de 2024
+</h2>
+   <img src="outubro.jpg" alt="Imagem Polaroid" class="polaroid">
+
+
+<h2>
+    Novembro de 2024
+</h2>
+   <img src="teste6.jpg" alt="Imagem Polaroid" class="polaroid">
+
+<h2>
+    Dezembro de 2024
+</h2>
+   <img src="dezembro.jpg" alt="Imagem Polaroid" class="polaroid">
+
+<h2>
+    Janeiro de 2025
+</h2>
+   <img src="janeiro.jpg" alt="Imagem Polaroid" class="polaroid">
+   <img src="janeiro2.jpg" alt="Imagem Polaroid" class="polaroid">
+
+<h2>
+    Fevereiro de 2025
+</h2>
+   <img src="fevereiro.jpg" alt="Imagem Polaroid" class="polaroid">
+
+<h2>
+    Março de 2025
+</h2>
+   <img src="marco.jpg" alt="Imagem Polaroid" class="polaroid">
+   <img src="marco2.jpg" alt="Imagem Polaroid" class="polaroid">
+   <img src="marco3.jpg" alt="Imagem Polaroid" class="polaroid">
+
+   
+
+
+
+
+    <script>
+        function createHeart() {
+            let heart = document.createElement("div");
+            heart.classList.add("heart");
+            heart.innerHTML = "❤️";
+            heart.style.left = `${Math.random() * 100}vw`;
+            document.body.appendChild(heart);
+
+           
+            heart.addEventListener("animationend", function() {
+                heart.remove();
+            });
+        }
+
+        
+        setInterval(createHeart, 1100);
+
+       
+        function updateTimer() {
+            let startDate = new Date('2024-04-01T00:00:00'); 
+            let currentDate = new Date();
+            let diffTime = currentDate - startDate; 
+
+            let days = Math.floor(diffTime / (1000 * 60 * 60 * 24)); 
+            let years = Math.floor(days / 365);
+            let daysInCurrentYear = days % 365;
+
+            document.getElementById('timer').innerText = `Hoje fazem exatos ${years} ano${years !== 1 ? 's' : ''} e ${daysInCurrentYear} dia${daysInCurrentYear !== 1 ? 's' : ''} que meus olhos cruzaram os teus!`;
+            document.getElementById('timer2').innerText = `Alguns dos nosso momentos desse ${years} ano${years !== 1 ? 's' : ''} e ${daysInCurrentYear} dia${daysInCurrentYear !== 1 ? 's' : ''} que passamos juntos:`;
+        }
+
+        
+        setInterval(updateTimer, 1000);
+        updateTimer();  
+    </script>
+</body>
+</html>
