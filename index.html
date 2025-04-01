@@ -97,15 +97,19 @@
 
 
     <script>
-        function createHeart() {
+      function createHeart() {
     let heart = document.createElement("div");
     heart.classList.add("heart");
     heart.innerHTML = "❤️";
     heart.style.left = `${Math.random() * 100}vw`;
-    
-    
+
+   
     let pageHeight = document.body.scrollHeight;
-    heart.style.animation = `fall ${Math.random() * 5 + 10}s linear infinite`;
+
+   
+    let fallDuration = Math.max(10, pageHeight / 150) + "s"; 
+
+    heart.style.animation = `fall ${fallDuration} linear infinite`;
     heart.style.setProperty('--fall-distance', `${pageHeight}px`);
 
     document.body.appendChild(heart);
@@ -116,6 +120,7 @@
 }
 
 setInterval(createHeart, 1100);
+
 
        
         function updateTimer() {
